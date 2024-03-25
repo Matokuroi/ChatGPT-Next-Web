@@ -195,6 +195,7 @@ export function SideBar(props: { className?: string }) {
           <IconButton
             icon={<AddIcon />}
             text={"LobeChat新部署的gptWeb,点击尝试下"}
+            className={styles["sidebar-bar-button"]}
             shadow
           />
         </a>
