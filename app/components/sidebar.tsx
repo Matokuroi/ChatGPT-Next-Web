@@ -155,11 +155,9 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          NextChat
+          Mato Chat
         </div>
-        <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
-        </div>
+        <div className={styles["sidebar-sub-title"]}>欢迎你的使用</div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -186,6 +184,20 @@ export function SideBar(props: { className?: string }) {
           onClick={() => showToast(Locale.WIP)}
           shadow
         />
+      </div>
+
+      <div className={styles["sidebar-header-bar"]}>
+        <a
+          href={"https://newchat.panpan.store"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconButton
+            icon={<AddIcon />}
+            text={"LobeChat新部署的gptWeb,点击尝试下"}
+            shadow
+          />
+        </a>
       </div>
 
       <div
